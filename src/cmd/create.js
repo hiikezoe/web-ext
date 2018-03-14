@@ -31,6 +31,7 @@ export default async function create(
     ignoreExisting: params.useLatest,
     command: 'create-webextension',
     cmdOpts: [params.projectPath],
+    shell: true,
     npm: NPM_PATH,
   });
 }
